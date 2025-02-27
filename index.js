@@ -51,7 +51,7 @@ const updateVideo = async () => {
     console.log(error);
   }
 };
-const updateEvery8Mins = new CronJob("*/8 * * * * *", async () => {
+const updateEvery8Mins = new CronJob("*/8 * * * *", async () => {
     updateVideo();
   });
   
